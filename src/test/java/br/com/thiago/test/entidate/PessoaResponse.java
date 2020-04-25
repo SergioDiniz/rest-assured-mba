@@ -6,13 +6,15 @@ public class PessoaResponse {
 	private String job;
 	private String id;
 	private String createdAt;
-	
-	public PessoaResponse(String nome, String job, String id, String createdAt) {
-		super();
+	private String updatedAt;
+
+
+	public PessoaResponse(String nome, String job, String id, String createdAt, String updatedAt) {
 		this.nome = nome;
 		this.job = job;
 		this.id = id;
 		this.createdAt = createdAt;
+		this.updatedAt = updatedAt;
 	}
 
 	public String getId() {
@@ -47,6 +49,12 @@ public class PessoaResponse {
 	public void setJob(String job) {
 		this.job = job;
 	}
-	
-	
+
+	public String getUpdatedAt() {
+		return updatedAt;
+	}
+
+	public void setUpdatedAt(String updatedAt) {
+		this.updatedAt = updatedAt;
+	}
 }
